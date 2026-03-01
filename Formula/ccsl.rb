@@ -13,8 +13,11 @@ class Ccsl < Formula
     virtualenv_install_with_resources
   end
 
-  def post_install
-    system bin/"ccsl", "--setup"
+  def caveats
+    <<~EOS
+      Run once to configure Claude Code:
+        ccsl --setup
+    EOS
   end
 
   test do
