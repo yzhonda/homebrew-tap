@@ -5,6 +5,8 @@ Homebrew formulae for [ccsl](https://github.com/usedhonda/statusline).
 ## Install
 
 ```bash
-brew tap usedhonda/tap
-brew install ccsl
+brew install usedhonda/tap/ccsl
+ccsl --setup
 ```
+
+Restart Claude Code. Done.
