@@ -13,6 +13,10 @@ class Ccsl < Formula
     virtualenv_install_with_resources
   end
 
+  def post_install
+    system bin/"ccsl", "--setup"
+  end
+
   test do
     assert_match "ccsl", shell_output("#{bin}/ccsl --version")
   end
